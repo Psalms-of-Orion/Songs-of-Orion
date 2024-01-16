@@ -224,8 +224,8 @@
 		//wall_fake = 1
 
 	var/turf/Tsrc = get_turf(src)
-	Tsrc.ChangeTurf(/turf/simulated/wall)
-	var/turf/simulated/wall/T = get_turf(src)
+	Tsrc.ChangeTurf(/turf/simulated/wall/untinted/orion_default)
+	var/turf/simulated/wall/untinted/orion_default/T = get_turf(src)
 	T.set_material(M, reinf_material)
 	//if(wall_fake)
 		//T.can_open = 1
@@ -250,7 +250,7 @@
 		return 1 //once we've gotten this far don't call parent attackby()
 
 
-	var/obj/structure/low_wall/T = new(loc, M.name, reinf_material?.name)
+	var/obj/structure/low_wall/orion/T = new(loc, M.name, reinf_material?.name)
 	T.add_hiddenprint(usr)
 	T.Created()
 	qdel(src)

@@ -698,6 +698,37 @@ proc/end_grab_onto(mob/living/user, mob/living/target)
 	basestate = "w"
 	dir = 5
 
+//Songs of Orion edit
+/obj/structure/window/basic/full/orion
+	dir = SOUTH|EAST
+	icon = 'icons/obj/structures/windows.dmi'
+	icon_state = "orion"
+	basestate = "orion"
+	alpha = 255
+	resistance = RESISTANCE_NONE
+	flags = null
+
+/obj/structure/window/plasmabasic/full/orion
+	alpha = 255
+	icon_state = "porion"
+	basestate = "porion"
+
+/obj/structure/window/reinforced/full/orion
+	alpha = 255
+	icon_state = "rorion"
+	basestate = "rorion"
+
+/obj/structure/window/reinforced/plasma/full/orion
+	alpha = 255
+	icon_state = "porion"
+	basestate = "porion"
+
+/obj/structure/window/reinforced/polarized/full/orion
+	alpha = 255
+	icon_state = "orion"
+	basestate = "orion"
+//End of orion edit
+
 /obj/structure/window/reinforced/polarized
 	name = "electrochromic window"
 

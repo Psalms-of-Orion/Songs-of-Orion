@@ -512,7 +512,7 @@ var/list/name_to_material
 	destruction_desc = "shatters"
 	window_options = list("One Direction" = 1, "Full Window" = 6)
 	created_window = /obj/structure/window/basic
-	created_window_full = /obj/structure/window/basic/full
+	created_window_full = /obj/structure/window/basic/full/orion
 	rod_product = /obj/item/stack/material/glass/reinforced
 	conductive = FALSE
 	hitsound = 'sound/effects/Glasshit.ogg'
@@ -638,7 +638,7 @@ var/list/name_to_material
 	composite_material = list(MATERIAL_STEEL = 2,MATERIAL_GLASS = 3)
 	window_options = list("One Direction" = 1, "Full Window" = 6, "Windoor" = 5)
 	created_window = /obj/structure/window/reinforced
-	created_window_full = /obj/structure/window/reinforced/full
+	created_window_full = /obj/structure/window/reinforced/full/orion
 	conductive = FALSE
 	wire_product = null
 	rod_product = null
@@ -662,7 +662,7 @@ var/list/name_to_material
 	weight = 40
 	hardness = 50
 	created_window = /obj/structure/window/plasmabasic
-	created_window_full = /obj/structure/window/plasmabasic/full
+	created_window_full = /obj/structure/window/plasmabasic/full/orion
 	wire_product = null
 	rod_product = /obj/item/stack/material/glass/plasmarglass
 	conductive = FALSE
@@ -682,7 +682,7 @@ var/list/name_to_material
 	stack_origin_tech = list(TECH_MATERIAL = 5)
 	composite_material = list() //todo
 	created_window = /obj/structure/window/reinforced/plasma
-	created_window_full = /obj/structure/window/reinforced/plasma/full
+	created_window_full = /obj/structure/window/reinforced/plasma/full/orion
 	hardness = 60
 	weight = 50
 	conductive = FALSE
